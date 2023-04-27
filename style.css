@@ -1,0 +1,51 @@
+.outBox{
+    /* height: 500px; */
+    width: 700px;
+    background:  radial-gradient(circle, #00ADB5 20%, #222831 100%);
+    z-index: 30;
+}
+
+#life{
+    background-color:#EEEEEE;
+}
+#score{
+    background-color:#EEEEEE;
+}
+.color{
+    background-color:#EEEEEE;
+}
+#small{
+    z-index: 30;
+}
+.inBox{
+    top: 0;
+    left: 50;
+    background-color: white;
+    height: 500px;
+    overflow: hidden;
+    /* z-index: 5000; */
+}
+
+#gameOverBox{
+    background-image: linear-gradient(#FFE6C7, #454545);
+    height: 500px;
+    /* z-index: 20; */
+}
+.smallBox{
+    top: 0px;
+    height: 50px;
+    width: 50px;
+    z-index: 20;
+    background-color:aqua;
+}
+
+.gameOverBox{
+background-color: transparent;
+height: 40%;
+top: 30%;
+}
+
+.finalgame{
+    margin-top: 200px;
+    background-color: transparent;
+}
