@@ -3,11 +3,28 @@ var lifeLine = 3
 var flag = false
 var points = 0
 document.getElementById("new").style.display = "none"
+document.getElementById("startAgain").style.display = "none"
 
 var audio = new Audio();
 audio.src = "./s.mp3"
 
+function move1() {
+    move()
+    document.getElementById("life").style.backgroundColor = "#EEEEEE"
+    document.getElementById("h-1").style.display = "block"
+    document.getElementById("h-2").style.display = "block"
+    document.getElementById("h-3").style.display = "block"
+    document.getElementById("scoreBoard").style.display = "none"
+    document.getElementById("score").innerHTML = `SCORE : 0`
+     lifeLine = 3
+     points = 0
+    document.getElementById("new").style.display = "none"
+    console.log("dsf")
+}
+
+
 function move() {
+    // document.getElementById("new").style.display = "none"
     function getRandomInt(max) {
         return Math.floor(Math.random() * max);
     }
@@ -56,7 +73,11 @@ function move() {
             clearInterval(animation)
             SmallBox.style.display = "none"
             document.getElementById("new").style.display = "block"
+            document.getElementById("scoreBoard").style.display = "block"
             document.getElementById("scoreBoard").innerHTML = `SCORE : ${points}`
+            document.getElementById("startAgain").style.display = "block"
+            document.getElementById("start").style.display = "none"
+            // move()
         }
     }
 }
