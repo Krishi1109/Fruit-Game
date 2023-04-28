@@ -9,7 +9,7 @@ var audio = new Audio();
 audio.src = "./s.mp3"
 
 function move1() {
-    move()
+   
     document.getElementById("life").style.backgroundColor = "#EEEEEE"
     document.getElementById("h-1").style.display = "block"
     document.getElementById("h-2").style.display = "block"
@@ -19,7 +19,8 @@ function move1() {
      lifeLine = 3
      points = 0
     document.getElementById("new").style.display = "none"
-    console.log("dsf")
+    // console.log("dsf")
+    move()
 }
 
 
